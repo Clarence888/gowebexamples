@@ -58,3 +58,11 @@ func Method(m string) Middleware {
 		}
 	}
 }
+
+/*
+$ curl -s http://localhost:8080/
+hello world
+
+$ curl -s -XPOST http://localhost:8080/
+Bad Request
+*/
