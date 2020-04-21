@@ -21,7 +21,7 @@ func main() {
 	//连接到MySQL数据库a
 	//并不会立即建立一个数据库的网络连接, 也不会对数据库链接参数的合法性做检验, 它仅仅是初始化一个sql.DB对象. 当真正进行第一次数据库查询操作时, 此时才会真正建立网络连接;
 	//返回的sql.DB对象是协程并发安全的. sql.DB的设计就是用来作为长连接使用的。不要频繁Open, Close
-	db, err := sql.Open("mysql", "changliang:changliang@(211.159.180.243:3306)/superstar?parseTime=true")
+	db, err := sql.Open("mysql", "xxxx:xxxx@(xxxx:3306)/superstar?parseTime=true")
 	if err == nil {
 
 		//查找有没有user表
